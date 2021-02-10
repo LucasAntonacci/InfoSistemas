@@ -1,0 +1,17 @@
+<CLIENTE>
+	<Email>lucasantonacci@gmail.com</Email>
+	<CPF>06866994675</CPF>
+	<Identidade>12298356</Identidade>
+	<Nome>Lucas Antonacci</Nome>
+	<Endereco>
+		<Logradouro>Rua Reginaldo de Souza Lima</Logradouro>
+		<Bairro>Bernardo Monteiro</Bairro>
+		<UF>MG</UF>
+		<Cep>32010370</Cep>
+		<Numero>975</Numero>
+		<Localidade>Contagem</Localidade>
+		<Complemento>bl 5 apto 202</Complemento>
+		<Pais>Brasil</Pais>
+	</Endereco>
+	<Telefone>31971737645</Telefone>
+</CLIENTE>

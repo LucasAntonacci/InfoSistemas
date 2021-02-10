@@ -1,0 +1,330 @@
+object Principal: TPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Main - Lucas Eust'#225'quio Souza Antonacci'
+  ClientHeight = 300
+  ClientWidth = 905
+  Fill.Kind = Solid
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object LayoutPrincipal: TLayout
+    Align = Client
+    Size.Width = 905.000000000000000000
+    Size.Height = 300.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object LayoutBottom: TLayout
+      Align = Bottom
+      Position.Y = 277.000000000000000000
+      Size.Width = 905.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object LayoutCenter: TLayout
+      Align = Client
+      Size.Width = 905.000000000000000000
+      Size.Height = 277.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object LayoutContentAll: TLayout
+        Align = Client
+        Size.Width = 624.000000000000000000
+        Size.Height = 277.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object gDados: TGroupBox
+          Align = Top
+          StyledSettings = [Family, Size, Other]
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 584.000000000000000000
+          Size.Height = 100.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Dados Pessoais'
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TabOrder = 0
+          object eNome: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 0
+            Position.X = 24.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 305.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Label1: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 16.000000000000000000
+            Text = 'Nome'
+            TabOrder = 1
+          end
+          object Label2: TLabel
+            Position.X = 344.000000000000000000
+            Position.Y = 16.000000000000000000
+            Text = 'Identidade'
+            TabOrder = 2
+          end
+          object Label3: TLabel
+            Position.X = 456.000000000000000000
+            Position.Y = 16.000000000000000000
+            Text = 'CPF'
+            TabOrder = 3
+          end
+          object Label4: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 54.000000000000000000
+            Text = 'Telefone'
+            TabOrder = 4
+          end
+          object Label5: TLabel
+            Position.X = 136.000000000000000000
+            Position.Y = 54.000000000000000000
+            Text = 'E-Mail'
+            TabOrder = 5
+          end
+          object eIdentidade: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 6
+            FilterChar = '1234567890'
+            Position.X = 344.000000000000000000
+            Position.Y = 32.000000000000000000
+          end
+          object eCPF: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 7
+            FilterChar = '1234567890'
+            Position.X = 456.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 105.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object eTelefone: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 8
+            FilterChar = '1234567890'
+            Position.X = 24.000000000000000000
+            Position.Y = 70.000000000000000000
+            Size.Width = 105.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object eEmail: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 9
+            Position.X = 136.000000000000000000
+            Position.Y = 70.000000000000000000
+            Size.Width = 417.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object gEndereco: TGroupBox
+          Align = Top
+          StyledSettings = [Family, Size, Other]
+          Margins.Left = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 120.000000000000000000
+          Size.Width = 584.000000000000000000
+          Size.Height = 152.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Endere'#231'o'
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TabOrder = 1
+          object Label6: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 16.000000000000000000
+            Text = 'CEP'
+            TabOrder = 0
+          end
+          object Label7: TLabel
+            Position.X = 176.000000000000000000
+            Position.Y = 16.000000000000000000
+            Text = 'Logradouro'
+            TabOrder = 1
+          end
+          object Label8: TLabel
+            Position.X = 424.000000000000000000
+            Position.Y = 8.000000000000000000
+            Text = 'N'#250'mero'
+            TabOrder = 2
+          end
+          object Label9: TLabel
+            Position.X = 176.000000000000000000
+            Position.Y = 56.000000000000000000
+            Text = 'Bairro'
+            TabOrder = 3
+          end
+          object Label10: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 96.000000000000000000
+            Text = 'Cidade'
+            TabOrder = 4
+          end
+          object Label11: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 56.000000000000000000
+            Text = 'Complemento'
+            TabOrder = 5
+          end
+          object Label12: TLabel
+            Position.X = 176.000000000000000000
+            Position.Y = 96.000000000000000000
+            Text = 'Estado'
+            TabOrder = 6
+          end
+          object Label13: TLabel
+            Position.X = 320.000000000000000000
+            Position.Y = 96.000000000000000000
+            Text = 'Pa'#237's'
+            TabOrder = 7
+          end
+          object eCep: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 8
+            Position.X = 24.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            OnChangeTracking = eCepChangeTracking
+          end
+          object eLogradouro: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 9
+            Position.X = 176.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object eNumero: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 10
+            FilterChar = '1234567890'
+            Position.X = 424.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 57.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object eComplemento: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 11
+            Position.X = 24.000000000000000000
+            Position.Y = 72.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object eBairro: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 12
+            Position.X = 176.000000000000000000
+            Position.Y = 72.000000000000000000
+            Size.Width = 305.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object eCidade: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 13
+            Position.X = 24.000000000000000000
+            Position.Y = 112.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object eEstado: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 14
+            Position.X = 176.000000000000000000
+            Position.Y = 112.000000000000000000
+            Size.Width = 137.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object ePais: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 15
+            Position.X = 320.000000000000000000
+            Position.Y = 112.000000000000000000
+            Size.Width = 161.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object bbInserirCadastro: TButton
+            StyledSettings = [Family, Size, FontColor]
+            Position.X = 488.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 89.000000000000000000
+            Size.Height = 105.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 16
+            Text = 'Inserir Cadastro'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = True
+            OnClick = bbInserirCadastroClick
+          end
+        end
+      end
+      object LayoutRight: TLayout
+        Align = Right
+        Position.X = 624.000000000000000000
+        Size.Width = 281.000000000000000000
+        Size.Height = 277.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lstPesquisa: TListView
+          ItemAppearanceClassName = 'TDynamicAppearance'
+          ItemEditAppearanceClassName = 'TDynamicAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Margins.Top = 27.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Size.Width = 261.000000000000000000
+          Size.Height = 250.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ItemAppearance.ItemHeight = 50
+          ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+            item
+              AppearanceObjectName = 'Name'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.TextAlign = Leading
+              Appearance.TextColor = claDarkorange
+              Appearance.PlaceOffset.X = 10.000000000000000000
+              Appearance.PlaceOffset.Y = -10.000000000000000000
+            end
+            item
+              AppearanceObjectName = 'Email'
+              AppearanceClassName = 'TTextObjectAppearance'
+              Appearance.TextAlign = Leading
+              Appearance.TextVertAlign = Trailing
+              Appearance.PlaceOffset.X = 10.000000000000000000
+              Appearance.PlaceOffset.Y = -5.000000000000000000
+            end>
+          ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+            item
+              AppearanceObjectName = 'Text1'
+              AppearanceClassName = 'TTextObjectAppearance'
+            end>
+          SearchVisible = True
+        end
+      end
+    end
+  end
+end
